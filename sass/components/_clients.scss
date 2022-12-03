@@ -1,0 +1,39 @@
+.clients {
+  &__title {
+    @extend %sectionTitle;
+  }
+
+  &__list {
+    display: flex;
+    margin-left: -30px;
+  }
+
+  &__item {
+    width: calc((100% - 6 * 30px) / 6);
+    margin-left: 30px;
+  }
+}
+
+.item-clients__link {
+  display: inline-flex;
+  width: 170px;
+  height: 92px;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid $companyCardBorder;
+  border-radius: 4px;
+  color: $iconColor;
+  background-color: $primaryWhiteColor;
+  transition: color 250ms $cubicBezier, border-color 250ms $cubicBezier;
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+    border-color: $accentColor;
+  }
+}
+
+.item-clients__icon {
+  fill: currentColor;
+}

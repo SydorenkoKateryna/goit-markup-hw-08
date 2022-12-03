@@ -1,0 +1,98 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $extraBackgroundColor;
+
+  &__wrapper {
+    display: flex;
+  }
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  &--inverse {
+    color: $primaryWhiteColor;
+  }
+}
+
+.address__item {
+  width: 231px;
+
+  &:first-child {
+    margin-bottom: 9px;
+  }
+
+  &:nth-child(2) {
+    margin-bottom: 6px;
+  }
+}
+
+.address__link {
+  display: inline-block;
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+
+  color: $secondaryTextColor;
+  transition: color 250ms $cubicBezier;
+
+  &--inverse {
+    color: $primaryWhiteColor;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+}
+
+.join {
+  margin-left: 70px;
+  padding-top: 12px;
+
+  &__text {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $primaryWhiteColor;
+  }
+}
+
+.soc-join {
+  display: flex;
+
+  &__item + &__item {
+    margin-left: 10px;
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}
+
+.soc-join__link {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+
+  color: $primaryWhiteColor;
+  background-color: $iconBackgroundColor;
+  transition: background-color 250ms $cubicBezier;
+
+  &:hover,
+  &:focus {
+    background-color: $accentColor;
+  }
+}

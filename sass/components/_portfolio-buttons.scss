@@ -1,0 +1,36 @@
+.button-set {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+
+  &__item + &__item {
+    margin-left: 8px;
+  }
+}
+
+.portfolio-button {
+  min-width: 73px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+
+  font-weight: 500;
+  line-height: 1.63;
+  transition: color 250ms $cubicBezier, background-color 250ms $cubicBezier,
+    border-color 250ms $cubicBezier, box-shadow 250ms $cubicBezier;
+
+  &:hover,
+  &:focus {
+    color: $primaryWhiteColor;
+    background-color: $accentColor;
+    border-color: $accentColor;
+    box-shadow: $portfolioButtonShadow;
+  }
+
+  &--current {
+    color: $primaryWhiteColor;
+    background-color: $accentColor;
+    border-color: $accentColor;
+  }
+}
