@@ -20,10 +20,18 @@
 }
 
 .clients__title, .team__title, .activities__title {
-  font-size: 36px;
-  line-height: 1.17;
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.1785714286;
   text-align: center;
   color: #212121;
+}
+@media screen and (min-width: 1200px) {
+  .clients__title, .team__title, .activities__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.1666666667;
+  }
 }
 
 h1,
@@ -327,12 +335,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: -30px;
+  margin: -15px;
 }
 .activities__item {
   position: relative;
   width: calc((100% - 90px) / 3);
-  margin-left: 30px;
+  margin: 15px;
 }
 
 .item-activities__meta {
@@ -354,7 +362,7 @@ body {
 }
 .item-activities__title {
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.1428571429;
   text-transform: uppercase;
   color: #ffffff;
 }
