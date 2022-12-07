@@ -602,6 +602,11 @@ body {
     margin-top: 60px;
   }
 }
+@media screen and (min-width: 768px) {
+  .join {
+    padding-top: 5px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .join {
     margin-left: 70px;
