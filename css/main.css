@@ -508,16 +508,70 @@ body {
 }
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2f303a;
+}
+@media screen and (min-width: 768px) {
+  .footer__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .footer__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 28px;
+}
+@media screen and (max-width: 1199.98px) {
+  .footer__logo {
+    text-align: center;
+  }
 }
 .footer__logo--inverse {
   color: #ffffff;
 }
 
+@media screen and (max-width: 1199.98px) {
+  .address__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.address__item {
+  width: 232px;
+}
+@media screen and (max-width: 1199.98px) {
+  .address__item {
+    text-align: center;
+  }
+}
+.address__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
 .address__link {
   font-style: normal;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.1428571429;
   color: rgba(255, 255, 255, 0.6);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -529,15 +583,49 @@ body {
   color: #2196f3;
 }
 
+@media screen and (max-width: 1199.98px) {
+  .join {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .join {
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .join {
+    margin-left: 70px;
+    padding-top: 12px;
+  }
+}
 .join__text {
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.1428571429;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
 }
 
+.soc-join {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.soc-join__item + .soc-join__item {
+  margin-left: 10px;
+}
 .soc-join__icon {
   fill: currentColor;
 }
@@ -1022,15 +1110,84 @@ body {
   border-color: #188ce8;
 }
 
+@media screen and (max-width: 1199.98px) {
+  .subscription {
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscription {
+    margin-left: 93px;
+    padding-top: 12px;
+  }
+}
+
+.form-subscription {
+  width: 100%;
+  height: 156px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (max-width: 1199.98px) {
+  .form-subscription {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-subscription {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: 570px;
+    height: 86px;
+  }
+}
+.form-subscription__field {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .form-subscription__field {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-subscription__field {
+    width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
+}
 .form-subscription__label {
+  display: block;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1428571429;
   text-transform: uppercase;
   color: #ffffff;
 }
+@media screen and (max-width: 1199.98px) {
+  .form-subscription__label {
+    text-align: center;
+  }
+}
 
 .form-subscription__input {
+  width: 100%;
+  height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: transparent;
@@ -1069,4 +1226,13 @@ body {
   color: #ffffff;
   border-color: #ffffff;
   outline: transparent;
+}
+
+.form-button__icon {
+  margin-left: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .form-button__icon {
+    margin-left: 10px;
+  }
 }/*# sourceMappingURL=main.css.map */
