@@ -7,10 +7,12 @@
 
   opacity: 1;
   visibility: visible;
+  pointer-events: initial;
   transition: opacity 250ms $cubicBezier, visibility 250ms $cubicBezier;
   background-color: $backdropBackgroundColor;
 
   z-index: 1;
+  overflow-y: scroll;
 
   &--hidden {
     opacity: 0;
@@ -20,17 +22,15 @@
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 528px;
-  min-height: 581px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 40px;
   padding-bottom: 40px;
   padding-left: 40px;
   padding-right: 40px;
-
-  transform: translate(-50%, -50%) scale(1);
+  
+  transform: scale(1);
   transition: transform 250ms $cubicBezier;
 
   border-radius: 4px;
@@ -38,8 +38,32 @@
   box-shadow: $modalBoxShadow;
   border-radius: 4px;
 
+  @media screen and (min-width: 960px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms $cubicBezier;
+  }
+
+  @media screen and (max-width: 1199.98px) {
+    max-width: 450px;
+    width: 100%;
+    min-height: 609px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 528px;
+    width: 100%;
+    min-height: 581px;
+  }
+
   .backdrop--hidden & {
-    transform: translate(-50%, -50%) scale(0.8);
+    transform: scale(0.8);
+
+    @media screen and (min-width: 960px) {
+      transform: translate(-50%, -50%) scale(0.8);
+    }
   }
 }
 
