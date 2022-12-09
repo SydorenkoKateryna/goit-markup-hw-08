@@ -62,18 +62,8 @@
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          <svg
-            width="24"
-            height="24"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
+          <svg class="menu-toggle__icon" width="40" height="40">
+            <use href="./images/icons.svg#open-mobile-menu"></use>
           </svg>
         </button>
       </div>
@@ -812,28 +802,19 @@
         </div>
       </div>
     </footer>
-
-    <!-- Mobile menu -->
+    <!-- Мобільне меню -->
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          ></path>
+      <button class="menu-toggle menu-container__toggle js-close-menu">
+        <svg class="menu-toggle__icon" width="40" height="40">
+          <use href="./images/icons.svg#close-mobile-menu"></use>
         </svg>
       </button>
 
       <ul class="mobile-menu list">
         <li class="mobile-menu__item">
-          <a href="#" class="link mobile-menu__link mobile-menu__link--current">Студія</a>
+          <a href="#" class="link mobile-menu__link mobile-menu__link--current"
+            >Студія</a
+          >
         </li>
         <li class="mobile-menu__item">
           <a href="./portfolio.html" class="link mobile-menu__link"
@@ -847,7 +828,9 @@
 
       <ul class="mobile-contacts list">
         <li class="mobile-contacts__item">
-          <a href="tel:+380961111111" class="link mobile-contacts__link mobile-contacts__link--inverse"
+          <a
+            href="tel:+380961111111"
+            class="link mobile-contacts__link mobile-contacts__link--inverse"
             >+38 096 111 11 11</a
           >
         </li>

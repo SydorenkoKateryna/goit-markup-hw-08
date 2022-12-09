@@ -2,41 +2,18 @@
   border-bottom: 1px solid $headerBorder;
 
   @media screen and (max-width: 767.98px) {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   &__wrapper {
-    // @media screen and (min-width: 768px) {
-    //   display: flex;
-    //   align-items: center;
-    // }
     display: flex;
     align-items: center;
   }
 }
 
-.header__logo {
-  // display: block;
-  // padding-top: 16px;
-  // padding-bottom: 16px;
-
-  // @media screen and (min-width: 768px) {
-  //   padding-top: 26px;
-  //   padding-bottom: 26px;
-  // }
-
-  // @media screen and (min-width: 1200px) {
-  //   padding-top: 24px;
-  //   padding-bottom: 25px;
-  // }
-
-  &--inverse {
-    // padding-top: 24px;
-    // padding-bottom: 25px;
-
-    color: $primaryBlackColor;
-  }
+.header__logo--inverse {
+  color: $primaryBlackColor;
 }
 
 .nav {
